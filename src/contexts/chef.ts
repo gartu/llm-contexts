@@ -11,6 +11,7 @@ const chef: BotContext = {
   request: `Message : 
   \`\`\`%DATA%\`\`\`
   `,
+  placeholder: `Liste d'ingrédients`,
   variables: [
     {
       key: 'MEAL_TYPE',

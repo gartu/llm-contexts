@@ -11,6 +11,7 @@ const responder: BotContext = {
   request: `Message : 
   \`\`\`%DATA%\`\`\`
   `,
+  placeholder: 'Message reçu',
   variables: [
     {
       key: 'REPONSE_TYPE',
