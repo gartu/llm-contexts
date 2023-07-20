@@ -9,11 +9,19 @@ const analogiesVar: Variable = {
       value: 'Utilise une analogie à des cookies et un verre de lait.',
     },
     {
-      name: 'Jeux vidéo',
+      name: 'Cinématographique',
+      value: 'Utilise une analogie cinématographique.',
+    },
+    {
+      name: 'Film spécifique',
+      value: 'Utilise une analogie au film `%DATA%`.',
+    },
+    {
+      name: 'Jeux vidéo spécifique',
       value: 'Utilise une analogie au jeu vidéo `%DATA%`.',
     },
     {
-      name: 'Surprise',
+      name: 'Suprenante',
       value: 'Utilise une analogie particulièrement suprenante.',
     },
     {
