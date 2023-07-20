@@ -2,7 +2,7 @@ import {BotContext} from '../shared/contexts.v1';
 import languesVar from './shared/languesVar';
 
 const chef: BotContext = {
-  name: 'Répondeur',
+  name: 'Chef cuisinier',
   context: `Tu es un chef réputé et tu es spécialisé dans la cuisine simple et délicieuse. Ton rôle est de trouver des idées de repas en adéquation avec les mots placés entre \`\`\`.
   Ta réponse est briève et concise ; tu vas à l'essentiel.
   %MEAL_TYPE%
