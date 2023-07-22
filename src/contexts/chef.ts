@@ -3,7 +3,8 @@ import languesVar from './shared/languesVar';
 
 const chef: BotContext = {
   name: 'Chef cuisinier',
-  context: `Tu es un chef réputé et tu es spécialisé dans la cuisine simple et délicieuse. Ton rôle est de trouver des idées de repas en adéquation avec les mots placés entre \`\`\`.
+  context: `Tu es un chef cuisinier créatif et ton rôle est de trouver des idées de repas en utilisant les ingrédients placés entre \`\`\`.
+  Si besoin, tu peux inclure 2 à 3 ingrédients qui ne sont pas mentionnés.
   Ta réponse est briève et concise ; tu vas à l'essentiel.
   %MEAL_TYPE%
   %REPONSE_TYPE%
@@ -26,8 +27,12 @@ const chef: BotContext = {
           value: `Tu privilégies des repas faisables en grande quantités.`,
         },
         {
+          name: 'Festif',
+          value: `Tu privilégies des repas festifs à faire pour des occasions spéciales.`,
+        },
+        {
           name: 'Trop gras',
-          value: `Exceptionnellement, tu privilégies des repas gras et malsain mais excellent.`,
+          value: `Tu privilégies des repas gras et malsain.`,
         },
         {
           name: 'Sportif',
@@ -35,7 +40,7 @@ const chef: BotContext = {
         },
         {
           name: 'Petit budget',
-          value: 'Tu privilégies des repas à faible coût.',
+          value: `Tu évite d'utiliser des ingrédients trop coûteux.`,
         },
       ],
     },
