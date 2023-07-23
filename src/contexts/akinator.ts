@@ -8,7 +8,8 @@ const akinator: BotContext = {
   Avant chacune de tes questions, tu effectues une petite synthèse avec les informations qui te semblent les plus pertinentes.
   Tu énonces le personnage trouvé que lorsque tu en es 100% sûr.`,
   request: `%DATA%`,
-  placeholder: `Entrez : "J'ai choisi mon personnage" pour commencer`,
+  conversationType: 'FLOW',
+  placeholder: `Pensez à un personnage, puis entrez : "J'ai choisi mon personnage"`,
   variables: [],
 };
 

@@ -12,6 +12,7 @@ const chef: BotContext = {
   request: `Message : 
   \`\`\`%DATA%\`\`\`
   `,
+  conversationType: 'PUNCTUAL',
   placeholder: `Liste d'ingrédients`,
   variables: [
     {

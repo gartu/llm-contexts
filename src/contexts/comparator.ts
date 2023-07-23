@@ -18,6 +18,7 @@ const comparator: BotContext = {
   request: `Objet à comparer : 
   \`\`\`%DATA%\`\`\`
   `,
+  conversationType: 'PUNCTUAL',
   placeholder: 'Objet à comparer',
   variables: [],
 };

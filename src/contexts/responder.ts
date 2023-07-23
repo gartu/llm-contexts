@@ -8,6 +8,7 @@ const responder: BotContext = {
   Ta réponse est briève et concise ; tu vas à l'essentiel.
   %REPONSE_TYPE%
   %TONE%`,
+  conversationType: 'PUNCTUAL',
   request: `Message : 
   \`\`\`%DATA%\`\`\`
   `,

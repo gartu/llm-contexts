@@ -7,6 +7,7 @@ const translator: BotContext = {
   request: `Phrase à traduire : 
   \`\`\`%DATA%\`\`\`
   `,
+  conversationType: 'PUNCTUAL',
   placeholder: 'Phrase à traduire',
   variables: [
     languesVar('LANGUAGE_IN', 'Langue source'),

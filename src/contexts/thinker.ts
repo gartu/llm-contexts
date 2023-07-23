@@ -8,6 +8,7 @@ const thinker: BotContext = {
   request: `Affirmation : 
   \`\`\`%DATA%\`\`\`
   `,
+  conversationType: 'PUNCTUAL',
   placeholder: `Entrez une affirmation à débattre`,
   variables: [],
 };

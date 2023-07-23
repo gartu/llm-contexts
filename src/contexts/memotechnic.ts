@@ -10,6 +10,8 @@ const memotechnic: BotContext = {
   Répond en maximum 150 mots.`,
   request: `Sujet : 
   \`\`\`%DATA%\`\`\``,
+  conversationType: 'PUNCTUAL',
+  placeholder: 'De quoi souhaitez-vous vous rappeler ?',
   variables: [analogiesVar],
 };
 

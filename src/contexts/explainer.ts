@@ -9,6 +9,8 @@ const explainer: BotContext = {
   Répond en maximum 150 mots.`,
   request: `Question :
   \`\`\`%DATA%\`\`\``,
+  conversationType: 'PUNCTUAL',
+  placeholder: 'Explique moi',
   variables: [analogiesVar],
 };
 
