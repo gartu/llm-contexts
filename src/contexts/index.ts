@@ -6,10 +6,12 @@ import memotechnic from './memotechnic';
 import responder from './responder';
 import thinker from './thinker';
 import translator from './translator';
+import traveler from './traveler';
 
 export default [
   explainer,
   responder,
+  traveler,
   comparator,
   chef,
   thinker,
