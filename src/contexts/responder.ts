@@ -1,19 +1,44 @@
 import {BotContext} from '../shared/contexts.v1';
+import {shortAnswer} from './shared/chunk';
 import languesVar from './shared/languesVar';
 
 const responder: BotContext = {
   name: 'Répondeur',
   context: `Tu es un assistant et ton rôle est de répondre au messages placées entre \`\`\`.
   Tu réponds comme si tu es le destinataire.
-  Ta réponse est briève et concise ; tu vas à l'essentiel.
+  ${shortAnswer}
+  %SENDER%
   %REPONSE_TYPE%
-  %TONE%`,
+  %TONE%
+  %RESPONSE_CONTENT%`,
   conversationType: 'PUNCTUAL',
   request: `Message : 
   \`\`\`%DATA%\`\`\`
   `,
   placeholder: 'Message reçu',
   variables: [
+    {
+      key: 'SENDER',
+      name: 'Emetteur',
+      options: [
+        {
+          name: 'Famille',
+          value: `Le message provient d'un membre de ma famille.`,
+        },
+        {
+          name: 'Amis',
+          value: `Le message provient d'un amis.`,
+        },
+        {
+          name: 'Personne lambda',
+          value: `Le message provient d'une personne peu familière.`,
+        },
+        {
+          name: 'Contact professionnel',
+          value: `Le message provient d'un contact professionnel.`,
+        },
+      ],
+    },
     {
       key: 'REPONSE_TYPE',
       name: 'Type de réponse',
@@ -63,6 +88,20 @@ const responder: BotContext = {
         {
           name: 'Diplomate',
           value: `Formule la réponse de manière diplomate.`,
+        },
+      ],
+    },
+    {
+      key: 'RESPONSE_CONTENT',
+      name: 'Contenu de ta réponse',
+      options: [
+        {
+          name: 'A inclure dans la réponse',
+          value: `Répond en ajoutant le point suivant : "%DATA%"`,
+        },
+        {
+          name: 'Ne rien dire de plus',
+          value: ``,
         },
       ],
     },
