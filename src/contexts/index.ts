@@ -2,6 +2,7 @@ import akinator from './akinator';
 import chef from './chef';
 import comparator from './comparator';
 import explainer from './explainer';
+import lawyer from './lawyer';
 import memotechnic from './memotechnic';
 import responder from './responder';
 import thinker from './thinker';
@@ -16,6 +17,7 @@ export default [
   chef,
   thinker,
   akinator,
+  lawyer,
   translator,
   memotechnic,
 ];
